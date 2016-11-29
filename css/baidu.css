@@ -1,0 +1,242 @@
+html,body{
+	width:100%;
+	height:100%;
+}
+body{
+	overflow:hidden;
+}
+body,ul,li,p,input,a,h4,h3{
+	margin:0;padding:0;list-style: none;
+}
+a{
+	color:#fff;
+	text-decoration:none;
+}
+header{
+	width:100%;
+	height:66px;
+	background:rgba(33,160,227,0.8);
+	position:fixed;
+	left:0;top:0;
+	z-index:999;
+}
+.logo{
+	width:120px;
+	height:40px;
+	background:url(../img/header.png) no-repeat 0 0;
+	margin-top:10px;
+	float:left;
+}
+.header{
+	width:1000px;
+	margin:0 auto;
+	height:60px;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+}
+.index{
+	width:100px;
+	align-self:center;
+	margin-top:30px;
+	font-size:14px;
+}
+.index:hover{
+	color:#22B9FC;
+}
+.header a:nth-of-type(2){
+	margin-left:100px;
+}
+.last{
+	padding:0 20px;
+	font-size:12px;
+	align-self:flex-end;
+	margin-bottom:5px;
+}
+
+.header a:nth-of-type(5){
+	margin-left:100px;
+	position:relative;
+}
+.header a:nth-of-type(5) i{
+	position:absolute;
+	right:-12px;
+	top:-15px;
+	width:32px;
+	height:25px;
+	background:url(../img/header.png) no-repeat -93px -157px;
+}
+.header a:nth-of-type(8){
+	color:#F7D738;
+}
+
+
+
+#fullpage{
+	width:100%;
+	height:100%;
+	transition:margin 2s ease;
+}
+section{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+section:nth-child(1){
+	background:url(../img/bg-0.jpg) no-repeat 0 0;
+}
+section:nth-child(2){
+	background:url(../img/bg-1.jpg) no-repeat 0 0;
+}
+section:nth-child(3){
+	background:url(../img/bg-2.jpg) no-repeat 0 0;
+}
+section:nth-child(4){
+	background:url(../img/bg-3.jpg) no-repeat 0 0;
+}
+
+.list{
+	width:28px;
+	height:78px;
+	position:fixed;
+	right:20px;
+	top:0;bottom:0;
+	margin:auto 0;
+	z-index:999;
+}
+.list ul li a{
+	display:block;
+	width:8px;
+	height:8px;
+	border:1px solid #333;
+	border-radius:5px;
+}
+.list ul{
+	width:100%;
+	height:100%;
+}
+.list ul li{
+	height:25%;
+}
+
+.words{
+	width:501px;
+	height:158px;
+	background:url(../img/launch_deea86c.png) no-repeat 0 0;
+	position:absolute;
+	top:100px;
+	left:190px;
+}
+.flight{
+	width:119px;
+	height:78px;
+	background:url(../img/flight_ade8ee2.png) no-repeat 0 0;
+	position: absolute;
+	top:100px;
+	left:480px;
+}
+.ship{
+	width:242px;
+	height:228px;
+	position:absolute;
+	left:326px;
+	bottom:100px;
+	background:url(../img/ship_1ad6734.png) no-repeat 0 0;
+
+}
+.hill1{
+	width:265px;
+	height:175px;
+	background:url(../img/hill_1_0d79217.png) no-repeat 0 0;
+	position:absolute;
+	left:0px;
+	bottom:0px;	
+}
+.hill2{
+	width:63px;
+	height:78px;
+	background:url(../img/hill_2_540422f.png) no-repeat 0 0;
+	position:absolute;
+	left:65%;
+	bottom:63px;
+}
+.hill3{
+	width:260px;
+	height:175px;
+	background:url(../img/hill_3_ace39fb.png) no-repeat 0 0;
+	position:absolute;
+	right:50px;
+	bottom:0px;
+}
+.aside{
+	width:100%;
+	height:126px;
+	position:absolute;
+	left:0;
+	right:0;margin:0 auto;
+	bottom:0;
+	background:rgba(13,93,173,0.8);
+}
+section .title{
+	width:500px;
+	height:126px;
+	position: absolute;
+	top:100px;
+	left:190px;
+}
+section .title h4{
+	font-size:36px;
+	color:#fff;
+}
+section .title p{
+	font-size:20px;
+	color:#fff;
+	opacity:0.8;
+}
+section .title h3{
+	width:66px;
+	height:126px;
+	float:left;
+	margin-right: 10px;
+}
+section:nth-child(2) .title h3{
+	background:url(../img/h_lingxian_221f2d8.png) no-repeat center center;
+}
+section:nth-child(3) .title h3{
+	background:url(../img/h_quanmian_8f813d2.png) no-repeat center center;
+}
+section:nth-child(4) .title h3{
+	background:url(../img/h_zhuanye_256a94d.png) no-repeat center center;
+}
+
+.brain{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:65%;
+	margin:auto 0;
+	width:444px;
+	height:427px;
+	background:url(../img/brain_36a156f.png) no-repeat 0 0;
+}
+.allside{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:65%;
+	margin:auto 0;
+	width:444px;
+	height:330px;
+	background: url(../img/allside_e8abd12.png) no-repeat 0 0;
+}
+.stat{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:65%;
+	margin:auto 0;
+	width:603px;
+	height:301px;	
+	background: url(../img/stat_8934528.png) no-repeat 0 0;	
+}
