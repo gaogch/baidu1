@@ -54,22 +54,22 @@ $(function(){
     $("#fullpage")[0].addEventListener("webkitTransitionEnd",function(){
         flag = true;
         if(num !== 0){
-            $(".aa").each(function(index,obj){
+            $("section").each(function(index,obj){
                 if(index == 0){
                     return;
                 }
                 if(index == num){
-                    $("title").eq(num).css({
+                    $(obj).find(".title").css({
                         transform:"translate(0,0)",opacity:1
                     })
-                    $(obj).css({
+                    $(obj).find(".aa").css({
                         transform:"translate(0,0)",opacity:1
                     })
                 }else{
-                    $("title").eq(num).css({
+                    $(obj).find(".title").css({
                         transform:"translate(-50px,0)",opacity:0
                     })
-                    $(obj).css({
+                    $(obj).find(".aa").css({
                          transform:"translate(50px,0)",opacity:0
                     })
                 }
