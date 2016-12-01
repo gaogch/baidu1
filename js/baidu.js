@@ -22,6 +22,14 @@ $(function(){
             num = $("section").length-1;
             return;
         }
+        $(".box").eq(1).find(".title").css({
+            transform:"translate(-50px,0)",opacity:0,
+            transition:"none"
+        })
+        $(".box").eq(1).find(".aa").css({
+            transform:"translate(50px,0)",opacity:0,
+            transition:"none"
+        })
         flag = false;
         $(".list ul li a").css({
             background:"rgba(0,0,0,0)"
@@ -54,23 +62,27 @@ $(function(){
     $("#fullpage")[0].addEventListener("webkitTransitionEnd",function(){
         flag = true;
         if(num !== 0){
-            $("section").each(function(index,obj){
+            $(".box").each(function(index,obj){
                 if(index == 0){
                     return;
                 }
                 if(index == num){
                     $(obj).find(".title").css({
-                        transform:"translate(0,0)",opacity:1
+                        transform:"translate(0,0)",opacity:1,
+                        transition:"transform 2s ease 0s"
                     })
                     $(obj).find(".aa").css({
-                        transform:"translate(0,0)",opacity:1
+                        transform:"translate(0,0)",opacity:1,
+                        transition:"transform 2s ease 0s"
                     })
                 }else{
                     $(obj).find(".title").css({
-                        transform:"translate(-50px,0)",opacity:0
+                        transform:"translate(-50px,0)",opacity:0,
+                        transition:"transform 2s ease 0s"
                     })
                     $(obj).find(".aa").css({
-                         transform:"translate(50px,0)",opacity:0
+                         transform:"translate(50px,0)",opacity:0,
+                         transition:"transform 2s ease 0s"
                     })
                 }
             })
@@ -86,10 +98,10 @@ $(function(){
             $(this).find(".menu-option-bline").css({
                 transform:"translate(0,-5px) rotate(-45deg)"
             })
-            $(".menu").css({
-                // display:"block"
-                border:"0"
-            })
+            // $(".menu").css({
+            //     display:"block"
+            //     border:"0"
+            // })
             $(".menu a").each(function(index,obj){
                 $(obj).css({
                     opacity:0,
